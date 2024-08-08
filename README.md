@@ -10,7 +10,6 @@ Users start by pushing a new commit to the GitHub repository. This triggers the 
 
 ## Architecture Diagram 📌
 ![diagram](https://github.com/user-attachments/assets/c5919c0d-8e00-4c74-a22a-79058b45c67d)
-s-cicd-with-eb](https://github.com/Daoud-Hussain/AWS-CICD-Node-App/assets/144098846/f430491c-f767-4e2e-a7f6-2ba9f7e20ca5)
 
 ## Prerequisites 📋
 
