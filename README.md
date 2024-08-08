@@ -4,9 +4,17 @@ Build a CI/CD pipeline for a Node.js web application using AWS CI/CD services (*
 
 ## Architecture Description 📝
 
-The architecture of the CI/CD pipeline is as follows:
-Users start by pushing a new commit to the GitHub repository. This triggers the pipeline, which consists of three stages: **Source, Build, and Deploy**. The Source stage pulls the source code from the GitHub repository. The Build stage uses AWS CodeBuild to Test the Node.js web application. The Deploy stage uses AWS CodeDeploy to deploy the Node.js web application to an Elaastic Beanstalk environment.
-**Note:** The build stage in this project is used to test the Node.js web application. In a real-world scenario, you would also include the build process in this stage.
+Here's a quick look at the CI/CD pipeline architecture:
+
+**1. Commit to GitHub:** When users push a new commit to the GitHub repository, it triggers the pipeline. 
+
+**2. Pipeline Stages:** 
+
+- **Source:** Pulls the source code from the GitHub repository.
+- **Build:** Uses AWS CodeBuild to test the Node.js web application.
+- **Deploy:** Uses AWS CodeDeploy to deploy the Node.js web application to an Elastic Beanstalk environment.
+
+**Note:** In this project, the build stage is used to test the Node.js web application. In a real-world scenario, you would also include the build process in this stage.
 
 ## Architecture Diagram 📌
 ![diagram](https://github.com/user-attachments/assets/c5919c0d-8e00-4c74-a22a-79058b45c67d)
