@@ -1,7 +1,6 @@
 ## View the Application
 
-- Once the deployment is successful, you can view the application by navigating to the Elastic Beanstalk environment URL.
-- You can our application running on the Elastic Beanstalk environment.
-- Below is the screenshot of the my application running on the Elastic Beanstalk environment.
+- After successfully deploying the application, you can check it out by visiting the Elastic Beanstalk environment URL.
+- Here's a screenshot of my application up and running on Elastic Beanstalk
 
-![step-2 33](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/0e16cefd-7876-4e25-a137-49b14035b726)
+![output](https://github.com/user-attachments/assets/7b8366db-2035-46aa-ae0d-5678dd7eaad8)
