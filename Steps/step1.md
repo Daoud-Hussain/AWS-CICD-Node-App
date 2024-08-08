@@ -1,18 +1,14 @@
 ## Create a Instance role Elastic Beanstalk
 
-For the Elastic Beanstalk environment we need to create an instance role that allows the EC2 instances to communicate with other AWS services. But for this project, we are not going to do anything with the instance role. We are just creating it for the sake of creating it. It will not have any policies attached to it. It is just a dummy role.
+When setting up an Elastic Beanstalk environment, we usually need to create an instance role that lets EC2 instances interact with other AWS services. However, for this project, we're not actually going to use the instance role for anything specific. We're just creating it to have it in place, but it won't have any policies attached - it's essentially just a placeholder.
 
 ### Steps to Create a Instance role Elastic Beanstalk:
 1. **Navigate to IAM Console**
 
-![step-0 1](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/72301a2d-a471-4656-ae4a-4e187315da13)
-
-![step-0 2](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/cf5a6f09-2961-47fa-815b-463bc9d430b7)
-
-![step-0 3](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/564215cd-b76c-43cd-9e76-b5ff24318caf)
-
-![step-0 4](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/1e04f073-104a-4a18-8ad6-571984ad2666)
-
-![step-0 5](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/4614bf41-8b02-4256-a7b7-71d54395c967)
-
-![step-0 6](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/93071c36-f263-4ff7-aa80-3e0f2e11e023)
+![1](https://github.com/user-attachments/assets/e9d3ca00-383a-48fe-9b84-4db62bb08289)
+![2](https://github.com/user-attachments/assets/88d6e51f-3305-48e9-a611-ceb55696e2fd)
+![3](https://github.com/user-attachments/assets/4eb867fb-ad86-4e79-9b1f-bf7557e7e22d)
+![4](https://github.com/user-attachments/assets/58471acc-9e0a-43c9-9fea-b23bfd1d082f)
+![5](https://github.com/user-attachments/assets/b6b5858e-bd22-4921-9a15-58ce8fe8f471)
+![6](https://github.com/user-attachments/assets/2b2ebe85-8f20-4eb6-91a0-c6b3540a54eb)
+![7](https://github.com/user-attachments/assets/ebe1c9bb-1a77-4ab6-88d5-4ec24f6857e1)
