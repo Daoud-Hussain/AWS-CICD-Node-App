@@ -1,83 +1,75 @@
 ## Create a Pipeline to Deploy Node.js Application
 
-In this step, we will create a pipeline to deploy the Node.js web application to an Elastic Beanstalk environment. We will use AWS CodePipeline to create a pipeline that automates the deployment process.
+In this step, we'll set up a pipeline to automatically deploy your Node.js web application to an Elastic Beanstalk environment. We'll use AWS CodePipeline to make the whole deployment process smooth and automated.
 
 ### Steps to Create a Pipeline to Deploy Node.js Application:
 
-**Navigate to Pipeline Console**
+- Click on Services → All Services → Developer Tools.
+- Navigate to CodePipeline.
 
-![step-2 1](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/886b1de4-4653-4a21-b252-f814f74bf598)
+![17](https://github.com/user-attachments/assets/f7aaec02-39b8-479f-8234-b3d1b4ba4fd7)
 
-![step-2 2](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/dae3deb6-e94a-4f61-b9d3-c283573548d7)
+-  Click on Create Pipeline.
 
-![step-2 3](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/d135c736-9cdc-454e-8060-7cb5eed4edc9)
+![18](https://github.com/user-attachments/assets/b93734a3-71f0-481b-a6a9-b6ac3dac7727)
+![19](https://github.com/user-attachments/assets/75179605-bd3a-4ee6-9fa3-a33b95bed651)
+![20](https://github.com/user-attachments/assets/6a8d893b-d1a7-4595-b278-12c3878da3b8)
+![21](https://github.com/user-attachments/assets/414c1fca-6928-4804-adcc-d788568f5d33)
 
-![step-2 4](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/df79501a-9d97-43dd-b906-04a4a684ec17)
+- Connect to Github.
+  
+![22](https://github.com/user-attachments/assets/c1c091f7-b643-44ef-8719-0a7c9b52a422)
+![23](https://github.com/user-attachments/assets/50c20bef-9d99-47a2-bd0b-6bc1524261b0)
 
-**Choose the repository where your Application code**
+- Choose the repository containing your Application code.
+  
+![25](https://github.com/user-attachments/assets/c712f7b7-6f3c-45b9-b20b-f142fa9de34c)
+![26](https://github.com/user-attachments/assets/7423a3a4-3705-4d12-a989-68093cfe5651)
+![27](https://github.com/user-attachments/assets/937183e9-4d00-4a6f-a174-d55dc299ef1c)
 
-![step-2 5](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/8eb2c1cb-9f94-4af6-a048-c9c262782388)
+![28](https://github.com/user-attachments/assets/3bda2860-1ad3-4ec5-8a44-629c024dd884)
 
-![step-2 6](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/673b5179-19da-475f-b4e1-a7a70889a447)
+- Now, Create Project to add build.
 
-![step-2 7](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/ddc3ed98-04e9-4b99-9d3a-1486614f31c6)
+![29](https://github.com/user-attachments/assets/17a4eed5-9321-41b9-ac00-6a95fe590908)
+![30](https://github.com/user-attachments/assets/9c644341-fae7-46d7-8705-5120fae8c441)
+![30 5](https://github.com/user-attachments/assets/c7ccb36e-ed74-4797-a399-e04d50714e21)
+![31](https://github.com/user-attachments/assets/6c78de91-6182-4aff-9be3-adb9cf58d1b5)
+![33](https://github.com/user-attachments/assets/76ed0539-292a-4e02-99b0-e6f56b54ae99)
 
-![step-2 8](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/2f461c2a-48fa-4155-84f1-06fd8f0e5c83)
+- After build stage is completed, add Deploy Stage.
 
-![step-2 9](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/635f478a-6243-4fa1-86b2-20cf3bc25554)
+![34](https://github.com/user-attachments/assets/0c748b21-55f9-4cb5-b5b1-755551f06423)
+![35](https://github.com/user-attachments/assets/e6fd44fd-adf6-4c25-ab49-9a8b1c2a43a8)
+![36](https://github.com/user-attachments/assets/6944af37-e7e4-4cbc-94a7-ab1a3ddb534e)
 
-![step-2 10](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/45ed9276-69d7-4e63-bf52-62d32354aee7)
+- Once you click on "Create Pipeline," it will start running automatically. However, there's one setting we need to change to make sure it runs smoothly. Since we're not building any binaries or Docker images, we won't be using the "Build Artifacts" option. Because of this, we also need to update that setting in the Deploy stage.
 
-![step-2 11](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/a185d433-4f8a-4a09-825d-01ed9ce116af)
+![41](https://github.com/user-attachments/assets/fbb3d907-4329-4075-885d-2c9a1bc8e19b)
+![42 5](https://github.com/user-attachments/assets/8ba82138-966e-4f45-b6a8-fc0e12f790a9)
+![43 5](https://github.com/user-attachments/assets/5ada9626-99c2-4713-9744-220783a0f3f4)
+![44 5](https://github.com/user-attachments/assets/ca1c9046-b025-4df8-a671-60d1d60ab61b)
 
-![step-2 12](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/7a11f1d6-9169-4aad-8d01-24d3f825915a)
+- Change BuildArtifact to SourceArtifact and click on done.
 
-![step-2 13](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/c053e9b7-a5ef-4714-9e89-afd068c95544)
+![45 5](https://github.com/user-attachments/assets/f6ebe9e5-30ea-42af-99b5-c820242f1453)
+![46 5](https://github.com/user-attachments/assets/a3a4710a-3546-4836-9e7e-10724a778b36)
 
-![step-2 14](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/91224dbb-8edc-4ab5-8b78-d788c981d498)
+- If You do not change the BuildArtifact to SourceArtifact, you'll get the below Error.
 
-![step-2 15](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/095c8ff0-5ee8-4c89-9b52-0c84c1ea0da1)
+![43](https://github.com/user-attachments/assets/653a0c7d-a3ff-487b-a7c5-712e3f24d1bf)
 
-![step-2 16](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/35f88bcc-d633-4371-8178-5a80b0998eb7)
+- Make sure to update the SourceArtifact option. Sometimes, the pipeline might not run successfully on the first try because it automatically triggers as soon as you click "Create Pipeline." Unfortunately, you can't edit the SourceArtifact option during the pipeline setup. You'll need to manually adjust it after the pipeline is created.
 
-![step-2 17](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/9f6b6339-91ef-49f8-9748-1d4d37890289)
+- Once you've done that, you can trigger the pipeline by making changes in the repository.
+  
+![44](https://github.com/user-attachments/assets/dce93f2e-4ae0-446a-8734-ce47911047ae)
 
-![step-2 18](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/104774d2-cf66-46f5-9f99-41aa206fe25a)
+- After changes in the repo, the pipeline will be triggered again.
+  
+![46](https://github.com/user-attachments/assets/63524553-8e60-4690-b33a-624a22e3999c)
+![47](https://github.com/user-attachments/assets/30007500-c597-456b-8295-ab02e9049ff6)
 
-![step-2 19](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/b4d08073-2693-474a-a97f-482e0b2376ed)
-
-![step-2 20](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/867077c2-fb3e-4eb4-9783-91da76a61ce5)
-
-**After Click on `Create Pipleline`, Your Pipeline will be triggered automatically. But we need to modify one setting to run Pipeline Successfully. Since we are not building any Binaries or Docker Images we are not using BuildArtifacts Option. So we also need to update that setting in Deploy Stage**
-
-![step-2 21](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/609fb01d-3d53-4cb0-abd2-b5157a624b02)
-
-![step-2 22](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/497883cb-ecad-4bad-a4cd-84c2aafd750f)
-
-![step-2 23](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/0513ae70-7029-46ae-8af0-816475b7d990)
-
-![step-2 24](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/9114c97a-dfe0-408c-8c28-d4ff1db3bf7c)
-
-![step-2 25](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/e9ae3bcf-9b88-4a82-9de6-98be6c9a0e91)
-
-![step-2 26](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/c58d6a82-a419-4566-9e2d-4c09db8dc964)
-
-![step-2 27](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/4be05b1a-28b7-47ca-b6ba-dc191653be05)
-
-**If You are not changed the BuildArtifact to SourceArtifact you'll get the below Error**
-
-![step-2 28](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/7e77dd6e-220c-4e5d-9e46-428e80b00e71)
-
-![step-2 29](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/ca85b29d-2cb5-4c39-bdc7-800be200548a)
-
-**So makesure to Edit the SourceArtifact Option. There may be a Chance your Pipeline will not run successfully at First, Because the Pipeline triggered automatically after you Click on `Create Pipleine`. We can't edit the SourceArtifact Option in Pipeline Configuration, We only have option to manually edit after Pipeline Creation**<br>
-**Now trigger the Pipeline by making a Changes in Respository**
-
-
-![step-2 30](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/d8292195-65f3-4848-a7dc-d4e91e63ddfc)
-
-![step-2 31](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/a7ea9cd5-1eca-4ca2-9bc2-fc48ec67edfc)
-
-![step-2 32](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/ffdbeeed-3d54-4499-a3fd-266bc06034ba)
-
-![step-2 33](https://github.com/mathesh-me/aws-cicd-devops-web-app/assets/144098846/e76c51fd-3240-470b-b574-62ddc8d414fe)
+- The deployment went smoothly this time, with no errors. Here's the link to the project that's now up and running.
+  
+![output](https://github.com/user-attachments/assets/95e380c6-cc91-4fa6-8bdb-f03282638092)
